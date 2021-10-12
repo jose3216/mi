@@ -1,0 +1,143 @@
+/* Indhent fonte */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,300&display=swap");
+@import url("https://use.typekit.net/nfl0hrz.css");
+
+@font-face {
+  font-family: "badaboom_bbregular";
+  src: url("badabb__-webfont.woff2") format("woff2"),
+    url("badabb__-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* De generelle 'regler' for fonte og farver */
+:root {
+  --bg-color: #f0a3e8;
+  --link-color: #5db136;
+  --link-hover-color: #5ac0cc;
+  --color-4: #f39132;
+  --color-5: #ffed00;
+
+  --primary-font: "BadaBoom BB", sans-serif;
+  --secondary-font: "bebas-neue-rounded", sans-serif;
+  --main-text-color: #000;
+
+  --white-space: 1rem;
+}
+
+/* body {
+  background-color: var(--bg-color);
+} */
+
+.snappy_container {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+  min-height: 100%;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+#navbar {
+  position: relative;
+  align-items: normal;
+}
+
+.navbar-brand img {
+  position: absolute;
+  left: 35%;
+}
+
+h1 {
+  font-family: var(--primary-font);
+  letter-spacing: 0.7px;
+  font-size: 5rem;
+  margin-top: calc(35vh);
+  transform: translateY(-50%);
+}
+
+h2 {
+  font-family: var(--primary-font);
+  letter-spacing: 0.7px;
+  font-size: 2rem;
+  /* text-align: center; */
+}
+h3 {
+  font-family: var(--secondary-font);
+}
+
+#splash {
+  width: 100%;
+  height: 15em;
+}
+
+.tini {
+  transform: scale(2);
+}
+
+.mille,
+.luigi {
+  transform: scale(1.5);
+}
+
+.pelle,
+.conellia {
+  transform: scale(1.2);
+}
+
+.aktivitet {
+  background-color: #c0006a;
+}
+
+.foodtag {
+  position: absolute;
+  transform: translateY(50vh) translateX(8vw) rotate(-25deg);
+}
+
+@media (min-width: 800px) {
+  .navbar-brand img {
+    left: 40%;
+  }
+
+  #splash {
+    height: 20em;
+  }
+
+  .foodtag {
+    transform: translateY(35vh) translateX(10vw) rotate(-25deg);
+  }
+
+  .foodtag_2 {
+    transform: translateY(37vh) translateX(-47vw) rotate(-25deg);
+    width: 50%;
+    height: auto;
+  }
+
+  /* .pasta3 {
+    height: 45%;
+    object-fit: cover;
+  } */
+}
+
+@media (min-width: 900px) {
+  .navbar-brand img {
+    left: 43%;
+  }
+  #splash {
+    height: 30em;
+  }
+
+  .foodtag_2 {
+    transform: translateY(50vh) translateX(8vw) rotate(-25deg);
+  }
+}
