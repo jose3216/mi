@@ -97,6 +97,13 @@ h3 {
 
 .aktivitet {
   background-color: #c0006a;
+  position: sticky;
+  top: 0;
+}
+
+.food {
+  position: relative;
+  background-color: whitesmoke;
 }
 
 .foodtag {
