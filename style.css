@@ -1,9 +1,14 @@
 /* Indhent fonte */
+/* Opensans */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
 /* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
+/* Lato */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,300&display=swap");
+/* Bebas Neue rounded */
 @import url("https://use.typekit.net/nfl0hrz.css");
-
+/* Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* BadaBoom */
 @font-face {
   font-family: "badaboom_bbregular";
   src: url("badabb__-webfont.woff2") format("woff2"),
@@ -26,6 +31,7 @@
 
   --primary-font: "BadaBoom BB", sans-serif;
   --secondary-font: "bebas-neue-rounded", sans-serif;
+  --third-font: "Montserrat", sans-serif;
   --main-text-color: #000;
 
   --white-space: 1rem;
@@ -64,7 +70,7 @@ section {
 h1 {
   font-family: var(--primary-font);
   letter-spacing: 0.7px;
-  font-size: 5rem;
+  font-size: 5em;
   margin-top: calc(35vh);
   transform: translateY(-50%);
 }
@@ -72,11 +78,23 @@ h1 {
 h2 {
   font-family: var(--primary-font);
   letter-spacing: 0.7px;
-  font-size: 2rem;
+  font-size: 3em;
   /* text-align: center; */
 }
 h3 {
   font-family: var(--secondary-font);
+  font-size: 2em;
+}
+
+h4,
+h5 {
+  font-family: var(--secondary-font);
+  font-size: 1em;
+}
+
+p,
+li {
+  font-family: var(--third-font);
 }
 
 #splash {
