@@ -22,7 +22,7 @@ gsap
   });
 
 //Animartion alle fader ind
-gsap.from("#splash, img", {
+gsap.from("#splash img", {
   y: 100,
   delay: 1,
   stagger: 0.5,

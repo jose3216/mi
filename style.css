@@ -34,7 +34,10 @@
 /* body {
   background-color: var(--bg-color);
 } */
-
+section {
+  scroll-snap-align: start;
+  min-height: 100%;
+}
 .snappy_container {
   scroll-snap-type: y mandatory;
 }
@@ -94,7 +97,6 @@ h3 {
 .conellia {
   transform: scale(1.2);
 }
-
 .aktivitet {
   background-color: #c0006a;
   position: sticky;
@@ -111,6 +113,15 @@ h3 {
   transform: translateY(50vh) translateX(8vw) rotate(-25deg);
 }
 
+.carousel-indicators [data-bs-target] {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.carousel-indicators .active {
+  color: #c0006a;
+}
 @media (min-width: 800px) {
   .navbar-brand img {
     left: 40%;
