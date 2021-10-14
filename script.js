@@ -55,3 +55,35 @@ function videoScroll() {
     }
   }
 }
+
+ScrollTrigger.matchMedia({
+  "(min-width: 800px)": function () {
+    gsap.from(".ig_stagger", {
+      yPercent: 50,
+      stagger: 0.4,
+      opacity: 0,
+      duration: 2,
+      scrollTrigger: {
+        trigger: ".ig_stagger",
+        start: "5% 90%",
+        end: "90% 50%",
+        scrub: true,
+      },
+    });
+  },
+
+  "(max-width: 799px)": function () {
+    gsap.from(".ig_stagger", {
+      yPercent: 50,
+      stagger: 0.4,
+      opacity: 0,
+      duration: 2,
+      scrollTrigger: {
+        trigger: ".ig_stagger",
+        start: "10% 90%",
+        end: "100% 10%",
+        scrub: true,
+      },
+    });
+  },
+});

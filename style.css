@@ -19,14 +19,15 @@
 
 * {
   box-sizing: border-box;
+  row-gap: 0;
 }
 
 /* De generelle 'regler' for fonte og farver */
 :root {
-  --bg-color: #f0a3e8;
+  --bg-color: #fff;
   --link-color: #5db136;
-  --link-hover-color: #5ac0cc;
-  --color-4: #f39132;
+  --link-hover-color: #f2b57b;
+  --color-4: #c8e3e6;
   --color-5: #ffed00;
 
   --primary-font: "BadaBoom BB", sans-serif;
@@ -36,37 +37,6 @@
 
   --white-space: 1rem;
 }
-
-/* body {
-  background-color: var(--bg-color);
-} */
-section {
-  scroll-snap-align: start;
-  min-height: 100%;
-}
-.snappy_container {
-  scroll-snap-type: y mandatory;
-}
-
-section {
-  scroll-snap-align: start;
-  min-height: 100%;
-}
-
-.navbar-light .navbar-toggler {
-  border: none;
-}
-
-#navbar {
-  position: relative;
-  align-items: normal;
-}
-
-.navbar-brand img {
-  position: absolute;
-  left: 35%;
-}
-
 h1 {
   font-family: var(--primary-font);
   letter-spacing: 0.7px;
@@ -89,7 +59,7 @@ h3 {
 h4,
 h5 {
   font-family: var(--secondary-font);
-  font-size: 1em;
+  font-size: 1.3em;
 }
 
 p,
@@ -97,13 +67,21 @@ li {
   font-family: var(--third-font);
 }
 
+body {
+  background-color: var(--bg-color);
+}
+
+.snappy_container {
+  scroll-snap-type: y mandatory;
+}
+
 #splash {
   width: 100%;
-  height: 15em;
+  height: 100%;
 }
 
 .tini {
-  transform: scale(2);
+  transform: scale(2.1);
 }
 
 .mille,
@@ -113,22 +91,45 @@ li {
 
 .pelle,
 .conellia {
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
+
+.produkttekst {
+  padding: 30em;
+}
+
 .aktivitet {
   background-color: #c0006a;
-  position: sticky;
-  top: 0;
 }
 
-.food {
+section {
+  scroll-snap-align: start;
+  min-height: 100%;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+#navbar {
   position: relative;
-  background-color: whitesmoke;
+  align-items: normal;
 }
 
-.foodtag {
+.navbar-brand img {
   position: absolute;
-  transform: translateY(50vh) translateX(8vw) rotate(-25deg);
+  left: 35%;
+}
+
+.krea_tekst {
+  padding-top: 2rem;
+}
+
+.aktivitet h2 {
+  color: white;
+}
+.aktivitet p {
+  color: white;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -137,10 +138,25 @@ li {
   height: 10px;
 }
 
-.carousel-indicators .active {
-  color: #c0006a;
+#produkter {
+  background-color: var(--color-4);
 }
-@media (min-width: 800px) {
+.lanterne {
+  background-color: var(--color-4);
+}
+
+.smykker {
+  background-color: var(--link-hover-color);
+}
+.follow {
+  background-color: var(--bg-color);
+}
+
+.ig_stagger {
+  cursor: pointer;
+}
+
+@media (min-width: 760px) {
   .navbar-brand img {
     left: 40%;
   }
@@ -148,21 +164,14 @@ li {
   #splash {
     height: 20em;
   }
-
-  .foodtag {
-    transform: translateY(35vh) translateX(10vw) rotate(-25deg);
+  .aktivitet {
+    position: sticky;
+    top: 0;
   }
 
-  .foodtag_2 {
-    transform: translateY(37vh) translateX(-47vw) rotate(-25deg);
-    width: 50%;
-    height: auto;
+  .follow {
+    position: relative;
   }
-
-  /* .pasta3 {
-    height: 45%;
-    object-fit: cover;
-  } */
 }
 
 @media (min-width: 900px) {
