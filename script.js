@@ -1,26 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap
-  .timeline({
-    scrollTrigger: {
-      trigger: "nav",
-      start: "top 50%",
-      end: "end 90%",
-      //   markers: true,
-    },
-  })
-  .to(".logo", {
-    duration: 2,
-    ease: "elastic",
-    scale: 10,
-    y: 80,
-  })
-  .to(".logo", {
-    scale: 1,
-    y: 2,
-    x: -600,
-  });
-
 //Animartion alle fader ind
 gsap.from("#splash img", {
   y: 100,
@@ -58,6 +37,27 @@ function videoScroll() {
 
 ScrollTrigger.matchMedia({
   "(min-width: 800px)": function () {
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: "nav",
+          start: "top 50%",
+          end: "end 90%",
+          //   markers: true,
+        },
+      })
+      .to(".logo", {
+        duration: 2,
+        ease: "elastic",
+        scale: 10,
+        y: 80,
+      })
+      .to(".logo", {
+        scale: 1,
+        y: 2,
+        x: -600,
+      });
+
     gsap.from(".ig_stagger", {
       yPercent: 50,
       stagger: 0.4,
