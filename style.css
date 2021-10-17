@@ -74,10 +74,14 @@ body {
 .snappy_container {
   scroll-snap-type: y mandatory;
 }
-
+.sky_background {
+  position: fixed;
+  z-index: -1;
+}
 #splash {
   width: 100%;
   height: 180px;
+  /* background-image: url(img/sky_background.png); */
 }
 
 .tini {
@@ -95,6 +99,8 @@ body {
 }
 .pasta_dreng {
   overflow-x: hidden;
+  z-index: 1;
+  background-color: var(--bg-color);
 }
 
 .img_pasta_billede {
